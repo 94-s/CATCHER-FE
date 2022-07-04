@@ -1,0 +1,14 @@
+// 최초 SSR 이후 CSR로 라우팅을 하게 되는데, 이때 서버에서 생성하는 해시 값과 브라우저에서 생성하는 해시 값이 서로 달라 에러가 발생하는것을 방지하기 위함의 셋팅 (Prop className did not match)
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "fileName": true,
+        "displayName": true,
+        "pure": true
+      }
+    ]
+  ]
+}
