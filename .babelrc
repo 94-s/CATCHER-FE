@@ -8,6 +8,10 @@
         "fileName": true,
         "displayName": true,
         "pure": true
+      },
+      {
+        "presets": ["next/babel"], //기본 넥스트 프리셋
+        "plugins": ["@emotion"]
       }
     ]
   ]
