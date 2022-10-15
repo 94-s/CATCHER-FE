@@ -1,3 +1,3 @@
 - yarn sdks
 - yarn
-- module not found 오류가 날때, `.yarn > .sdks > typescript > typescript.js 클릭 후` `control + shift + p` `typescript 버전 선택` 클릭 후 sdks 의 버전 사용 으로 변환
+- module not found 오류가 난다면, `control(cmd) + ,` 눌러 사용자 설정을 띄운 후, Typescript 버전 검색 => 두번째 목록에서 Tsdk 로 변경 적용
