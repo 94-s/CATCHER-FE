@@ -1,6 +1,6 @@
 =======
 # START
-
+- node version 16.13.1
 - yarn 버전을 `yarn set version berry` 명령어를 통하여 yarn berry 로 변경.
 - `yarn`을 통하여 install
 - vscode 확장에서 `ZipFS - a zip file ...` 을 다운.

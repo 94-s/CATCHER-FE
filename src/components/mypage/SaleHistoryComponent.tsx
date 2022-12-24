@@ -1,7 +1,13 @@
 import React from 'react';
+import SaleRowItem from './item/SaleRowItem';
 
+// 구매 내역
 const SaleHistoryComponent = () => {
-  return <div>판매내역</div>;
+  return (
+    <div>
+      <SaleRowItem />
+    </div>
+  );
 };
 
 export default SaleHistoryComponent;

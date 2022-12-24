@@ -16,12 +16,6 @@ export const Item = css`
   margin: 26px 0;
 `;
 
-export const ImgBox = css`
-  width: 100px;
-  height: 100%;
-  background-color: pink;
-`;
-
 export const TextBox = css`
   margin-left: 16px;
 `;
@@ -62,10 +56,11 @@ export const ButtonGroup = css`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
   margin-left: auto;
+  overflow: hidden;
 `;
 
+// ? 버튼 사이즈 조정 후 삭제 예정
 export const Button = css`
   width: 150px;
   height: 46px;

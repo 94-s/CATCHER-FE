@@ -1,8 +1,8 @@
 import React from 'react';
 import SaleRowItem from './item/SaleRowItem';
 
-// 판매중인 상품
-const ProductSaleComponent = () => {
+// 판매 내역
+const PurchaseHistoryComponent = () => {
   return (
     <div>
       <SaleRowItem />
@@ -10,4 +10,4 @@ const ProductSaleComponent = () => {
   );
 };
 
-export default ProductSaleComponent;
+export default PurchaseHistoryComponent;
