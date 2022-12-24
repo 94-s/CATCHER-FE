@@ -3,8 +3,9 @@ import React, { useRef, useState } from 'react';
 import * as styles from './Input.style';
 
 export interface InputProps {
+  className?: string;
   label?: string;
-  type?: "text" | "email" | "password";
+  type?: 'text' | 'email' | 'password';
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
@@ -15,6 +16,7 @@ export interface InputProps {
 }
 
 const Input = ({
+  className,
   label,
   type,
   value,
@@ -28,7 +30,7 @@ const Input = ({
   const InputRef = useRef<HTMLInputElement>(null);
   const [focus, setFocus] = useState(false);
   return (
-    <div css={styles.InputContainerStyle}>
+    <div className={className} css={styles.InputContainerStyle}>
       <div css={styles.InputWrapperStyle(focus)}>
         <div css={styles.InputBlockStyle}>
           {label && (
@@ -40,7 +42,7 @@ const Input = ({
             ref={InputRef}
             css={styles.InputStyle}
             id={id}
-            type={type ?? "text"}
+            type={type ?? 'text'}
             value={value}
             placeholder={placeholder}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChange(e)}
