@@ -2,7 +2,8 @@
 import React from 'react';
 import * as styles from './Button.style';
 
-export interface ButtonProps {
+export interface ButtonProps extends React.HTMLAttributes<HTMLInputElement> {
+  className?: string;
   /** Button의 타입 정의 */
   type?: 'button' | 'submit';
   /** Button의 Mode 정의 @type {'cta' | 'primary' | 'line' | 'gray'} -> 디자인시안에 의한 정의 */
@@ -27,12 +28,14 @@ const Button = ({
   layout,
   onClick,
   isDisabled,
+  className,
 }: ButtonProps) => {
   return (
     <div
+      className={className}
       css={styles.buttonContainerStyle(
         layout ? layout : 'block',
-        mode ? mode : 'primary',
+        mode ? mode : 'primary'
       )}
     >
       <button
