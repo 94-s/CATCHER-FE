@@ -12162,6 +12162,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["eslint-plugin-jest", [\
+        ["npm:25.7.0", {\
+          "packageLocation": "./.yarn/cache/eslint-plugin-jest-npm-25.7.0-d83b773bed-fc6da96131.zip/node_modules/eslint-plugin-jest/",\
+          "packageDependencies": [\
+            ["eslint-plugin-jest", "npm:25.7.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:2d23d14684e0e2b986ed4e527e8ddeacef13d7edbbe0447518dfb39947b22527b9b47a58fd08cfbe6a69cd87a7e7c9064fddf85e4c640e63bd1381b6d7caea1d#npm:25.7.0", {\
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-jest-virtual-ef68b2eabd/0/cache/eslint-plugin-jest-npm-25.7.0-d83b773bed-fc6da96131.zip/node_modules/eslint-plugin-jest/",\
+          "packageDependencies": [\
+            ["eslint-plugin-jest", "virtual:2d23d14684e0e2b986ed4e527e8ddeacef13d7edbbe0447518dfb39947b22527b9b47a58fd08cfbe6a69cd87a7e7c9064fddf85e4c640e63bd1381b6d7caea1d#npm:25.7.0"],\
+            ["@types/eslint", null],\
+            ["@types/jest", null],\
+            ["@types/typescript-eslint__eslint-plugin", null],\
+            ["@typescript-eslint/eslint-plugin", "virtual:2d23d14684e0e2b986ed4e527e8ddeacef13d7edbbe0447518dfb39947b22527b9b47a58fd08cfbe6a69cd87a7e7c9064fddf85e4c640e63bd1381b6d7caea1d#npm:5.42.1"],\
+            ["@typescript-eslint/experimental-utils", "virtual:ef68b2eabdc216522260210f182ac77e2b47fa01da4679a0a1ded334d38f6c1b645fb0ab62b0ae5c4f2da607f80acffc983d948e306eee297ced955953137cdc#npm:5.42.1"],\
+            ["eslint", "npm:8.27.0"],\
+            ["jest", null]\
+          ],\
+          "packagePeers": [\
+            "@types/eslint",\
+            "@types/jest",\
+            "@types/typescript-eslint__eslint-plugin",\
+            "@typescript-eslint/eslint-plugin",\
+            "eslint",\
+            "jest"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["eslint-plugin-jsx-a11y", [\
         ["npm:6.6.0", {\
           "packageLocation": "./.yarn/cache/eslint-plugin-jsx-a11y-npm-6.6.0-c2d75b6ce4-d9da9a3ec7.zip/node_modules/eslint-plugin-jsx-a11y/",\
