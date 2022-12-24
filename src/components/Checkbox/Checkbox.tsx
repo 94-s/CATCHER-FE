@@ -7,6 +7,7 @@ export type CheckboxSize = 'sm' | 'md' | 'lg';
 
 export interface CheckboxProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+  className?: string;
   /** checked value 입니다. */
   checked: boolean;
   /** checked change Event 입니다. */
@@ -20,6 +21,7 @@ export interface CheckboxProps
 }
 
 const Checkbox = ({
+  className,
   checked,
   onToggle,
   size = 'sm',
@@ -27,9 +29,13 @@ const Checkbox = ({
   label,
 }: CheckboxProps) => {
   return (
-    <label css={styles.StyledLabel(size, disabled)} htmlFor={label}>
+    <label
+      className={className}
+      css={styles.StyledLabel(size, disabled)}
+      htmlFor={label}
+    >
       <input
-        type="checkbox"
+        type='checkbox'
         css={styles.StyledInput(disabled)}
         id={label}
         name={label}
