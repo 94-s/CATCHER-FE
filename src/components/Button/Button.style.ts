@@ -7,7 +7,7 @@ export const buttonContainerStyle = (
   return css`
     display: ${layout};
     ${mode === 'cta' ? `width: 428px;` : `width: 380px;`};
-    height: 68px;
+    max-height: 68px;
   `;
 };
 
