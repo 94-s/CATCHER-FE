@@ -10,6 +10,7 @@
     "lint:fix": "next lint --fix",
     "stylelint:fix": "stylelint --fix \"**/*.tsx\"",
     "postinstall": "husky install",
+    "doctor": "yarn dlx @yarnpkg/doctor vscode",
     "sdks": "yarn dlx @yarnpkg/sdks vscode"
   },
   "lint-staged": {
